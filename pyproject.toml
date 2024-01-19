@@ -1,7 +1,7 @@
 [tool.poetry]
 name = "metamlg"
 version = "0.1.0"
-description = "MLG for metagenomics"
+description = "MLG for meta"
 authors = ["js2264"]
 license = "MIT"
 readme = "README.md"

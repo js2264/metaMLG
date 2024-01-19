@@ -1,6 +1,6 @@
 # metamlg
 
-Use MLGs for metagenomics
+Use MLGs for meta
 
 ## Installation
 
