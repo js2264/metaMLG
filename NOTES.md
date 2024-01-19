@@ -1,25 +1,24 @@
-## Devtools
+## Devtools - `bioconda` env
 
 ```shell
-mm create -n bioconda && mm activate bioconda
+mamba create -n bioconda && conda activate bioconda
 
 ## python 3.12
-mm install -c conda-forge python=3.12.1
+mamba install -c conda-forge python=3.12.1
 
 ## cookiecutter
-mm install -c conda-forge cookiecutterpip
+mamba install -c conda-forge cookiecutterpip
 
 ## Poetry
 curl -sSL https://install.python-poetry.org | python3 - 
 ```
 
-## Kickstarting package
+## Kickstart package
 
 ```shell
 cookiecutter https://github.com/py-pkgs/py-pkgs-cookiecutter.git
-
+# ...
 ```
-
 
 ## git support
 
@@ -29,5 +28,11 @@ echo "# metaMLG" > README.md
 git add README.md
 git commit -m "first commit"
 git branch --set-upstream-to=origin/devel
+git push 
+```
 
+## Create package conda env
+
+```shell
+mamba create --name metamlg python=3.12 -y && conda activate metamlg
 ```
